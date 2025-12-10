@@ -13,8 +13,11 @@ body{
     border: none;
     border-radius: 15px;
     background-color: aquamarine;
-    height: 50vh;
+    height: auto;
     width: 25vw;
+    min-width: 300px;
+    max-width: 450px;
+    padding: 20px;
     box-shadow: 4px 5px 6px;
 }
 /* main heading of to-do list */
@@ -30,23 +33,30 @@ body{
 .addTask{
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 /* input section of to-do list app */
 input{
     padding: 7px;
     border-radius: 5px;
+    flex: 1;
+    min-width: 150px;
 }
 /* button section of to-do list app */
 button{
     background-color: antiquewhite;
     color: rgb(11, 11,11);
-    padding: 4px;
+    padding: 6px 10px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 /* ul creation css of to-do list app */
 ul{
     list-style: none;
     padding: 15px;
+    margin: 0;
 }
 /* list of to-do app list */
 li{
@@ -56,13 +66,50 @@ li{
     border-radius: 5px;
     padding:8px;
     margin-bottom: 7px;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 
 /* media query below here */
-@media (min-width: 370px) and (max-width: 1122px){
-    .container{
-        width: 80vw;
-        height: 60vh;
+@media (max-width: 992px) {
+    .container {
+        width: 50vw;
+        height: auto;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.4em;
+    }
+
+    input {
+        width: 96%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .addTask {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    li {
+        font-size: 0.95em;
+        padding: 10px;
     }
 }
