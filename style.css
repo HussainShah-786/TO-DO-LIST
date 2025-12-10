@@ -23,3 +23,15 @@ body{
     border-bottom: 0.5px solid white;
     margin-bottom: 20px;
 }
+.addTask{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    padding: 7px;
+    border-radius: 5px;
+
+}
+button{
+    
+}
