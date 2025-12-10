@@ -3,5 +3,7 @@ function addTask(){
     const taskList = document.getElementById('taskList')
     taskList.appendChild(newTask)
     newTask.textContent = document.getElementById('inputTask').value
-    
+    document.getElementById('inputTask').value = ''
+    deleteTask(newTask)
+
 }
