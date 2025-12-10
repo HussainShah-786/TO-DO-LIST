@@ -33,5 +33,9 @@ input{
 
 }
 button{
-    
+    background-color: antiquewhite;
+    color: rgb(11, 11,11);
+    padding: 4px;
+    border-radius: 5px;
+
 }
