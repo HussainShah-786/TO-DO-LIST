@@ -58,3 +58,11 @@ li{
     margin-bottom: 7px;
 
 }
+
+/* media query below here */
+@media (min-width: 370px) and (max-width: 1122px){
+    .container{
+        width: 80vw;
+        height: 60vh;
+    }
+}
