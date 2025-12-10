@@ -70,6 +70,14 @@ li{
     gap: 10px;
 
 }
+p{
+    color: red;
+}
+p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:black;
+}
 
 /* media query below here */
 @media (max-width: 992px) {
