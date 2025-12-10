@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- below css link with html  -->
     <link rel="stylesheet" href="style.css">
     <title>To-Do List</title>
 </head>
+
 <body>
+    <!-- main html container of to-do list app -->
     <div class="container">
         <div class="header">TO-DO LIST</div>
+        <div class="addTask">
+            <input type="text" placeholder="Add a new Task" id="inputTask">
+            <!-- adding below button to js function  -->
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul class="task-List" id="taskList"></ul>
     </div>
-    
     <script src="/script.js"></script>
 </body>
+
 </html>
